@@ -1,28 +1,13 @@
-\documentclass[11pt,a4paper,twoside]{article}
-\usepackage[noeledsec,nocritical,noend,noledgroup,nopenalties,series={E}]{reledmac}
+\documentclass[11pt,twoside]{article}
 \usepackage{fontspec}
 \usepackage[paperwidth=17.00cm,paperheight=25.00cm,top=1.40cm,inner=1.95cm,outer=1.65cm,bottom=2.54cm]{geometry}
 \usepackage{polyglossia}
-\usepackage[backend=biber,style=nncph]{biblatex}
-\addbibresource{bibliography.bib}
-\usepackage[breaklinks=true,hidelinks]{hyperref}
 \usepackage{graphicx}
-\usepackage{microtype}
-\sloppy
-\usepackage{xurl}
-%
-\parindentX
-\setlength{\parindent}{0.6cm}
-\setlength{\bibhang}{0.6cm}
-\AtBeginDocument{\maxhnotesX{1\textheight}}
-\linenummargin{outer}
+\usepackage{editio-critica}
 %
 \newcommand{\suppl}[1]{〈#1〉}
 \setdefaultlanguage{spanish}
 \setmainfont{TemporaNR}[RawFeature=lnum]
-%
-\usepackage{enumitem}
-\setlist{nosep,noitemsep,parsep=0pt}
 %
 %
 \begin{document}
@@ -53,12 +38,12 @@ Criterios de modernización:
 \item Los vocablos en cursiva y con una explicación indican que se cambió el vocablo utilizado en el manuscrito por otro equivalente --o próximo-- y accesible.\par
 \end{itemize}
 %
-\section*{\textsc{Bibliografía}}
+\section*{\centering\textsc{Bibliografía}}
   \nocite{*}
   \printbibliography[heading=none]
 \newpage
 %
-\subsection*{\raggedleft\textsc{Agora es tienpo de ganar buena soldada}}
+\subsection*{\centering\textsc{Agora es tienpo de ganar buena soldada}}
 %
 \noindent[f. 25v] ¶Para los devotos christianos que está\emph{n} en la batalla espiritual aplícanse estos metros sobre el ca\emph{n}tar que dize\emph{n} los juglares: «agora es tie\emph{n}po de ganar buena soldada».\par%
 %
@@ -231,11 +216,9 @@ por q\emph{ue} goze desta prea\\
 q\emph{ue} por dios nos fue ganada.\footnoteE[4]{¿Es plausible considerar que el cabo o estrofa de cierre sea un añadido del copista por cuenta propia o por orden ajena? Probablemente lo sea porque la rúbrica anuncia que es un cantar \emph{que dizen los juglares} y, por tanto, pertenecería a la tradición oral y no escrita y, de ser la \emph{enmendatio} «l\suppl{ea}» --realizada por \textcite{Severin2000}-- la lección correcta, la estrofa que cierra el texto estaría falseando la propia oralidad intrínseca a la tradición juglaresca, al enviar o invitar a leer y no a oír o «atender» lo que se recita.}\par
 \pend
 \endnumbering
-\relax
-\vfill
-\newpage
+\repage
 %
-\subsection*{\raggedleft\textsc{Ahora es tiempo de ganar buena soldada}}
+\subsection*{\centering\textsc{Ahora es tiempo de ganar buena soldada}}
 %
 Para los devotos cristianos que están en la batalla espiritual se aplican estos metros de la canción que llaman los juglares: «\emph{ahora es tiempo de ganar buena soldada}»\footnoteE{«soldada» = de sueldo, recibir un pago por las acciones o un trabajo. El texto apunta a que el «pago» a recibir es el «reino divino», prometido a quienes sigan al Cristo.}.\par
 %
@@ -291,9 +274,7 @@ en cierto sin vagar\\
 y sin decir ni pensar\\
 palabra demasiada.\par
 \pend
-\relax
-\vfill
-\newpage
+\repage
 %
 \begin{center}
 \textbf{[VI]}
@@ -408,11 +389,9 @@ para que goce de esta prea\\
 que por Dios nos fue ganada.\par
 \pend
 \endnumbering
-\relax
-\vfill
-\newpage
+\repage
 %
-\section*{\normalsize \textsc{Imágenes del códice}}
+\section*{\centering\textsc{Imágenes del códice}}
 %
 {\centering
 \includegraphics[width=1\textwidth]{25v.png}}
