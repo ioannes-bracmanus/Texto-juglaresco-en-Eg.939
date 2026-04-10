@@ -1,13 +1,18 @@
 \documentclass[11pt,twoside]{article}
 \usepackage{fontspec}
-\usepackage[paperwidth=17.00cm,paperheight=25.00cm,top=1.40cm,inner=1.95cm,outer=1.65cm,bottom=2.54cm]{geometry}
+\usepackage[paperwidth=17.50cm,paperheight=25.00cm,top=2.20cm,inner=2.65cm,outer=1.65cm,bottom=2.20cm]{geometry}
 \usepackage{polyglossia}
 \usepackage{graphicx}
 \usepackage{editio-critica}
+\linenummargin{right}
+\setlength{\linenumsep}{-65pt}
+%
+\usepackage{titleps}
+\newcommand{\head}[1]{\def\mihead{#1}\thispagestyle{empty}} \def\mihead{} \newpagestyle{editio}{\sethead[\thepage][\ifx\mihead\empty\else\mihead\fi][]{}{\ifx\mihead\empty\else\mihead\fi}{\thepage}} \pagestyle{editio}
 %
 \newcommand{\suppl}[1]{〈#1〉}
 \setdefaultlanguage{spanish}
-\setmainfont{TemporaNR}[RawFeature=lnum]
+\setmainfont{Alt Standard}[RawFeature=lnum]
 %
 %
 \begin{document}
@@ -49,7 +54,7 @@ Criterios de modernización:
 %
 \beginnumbering
 \begin{center}
-\textbf{[I]}
+\textbf{I}
 \end{center}
 \pstart
 ¶Pues tienes libre poder\\
@@ -60,7 +65,7 @@ la perdurable morada,\par
 \pend
 %
 \begin{center}
-\textbf{[II]}
+\textbf{II}
 \end{center}
 \pstart
 ¶Que después del hombre muerto\\
@@ -70,7 +75,7 @@ le será cue\emph{n}ta tomada.\par
 \pend
 %
 \begin{center}
-\textbf{[III]}
+\textbf{III}
 \end{center}
 \pstart
 ¶Has de yr solo, pelegrino,\\
@@ -81,7 +86,7 @@ que te hizo de no nada,\par
 \pend
 %
 \begin{center}
-\textbf{[IV]}
+\textbf{IV}
 \end{center}
 \pstart
 ¶Sirvie\emph{n}do prude\emph{n}teme\emph{n}te\\
@@ -91,7 +96,7 @@ el que es fin de la jornada.\par
 \pend
 %
 \begin{center}
-\textbf{[V]}
+\textbf{V}
 \end{center}
 \pstart
 ¶Por sus obras has de andar,\\
@@ -101,7 +106,7 @@ palabra demasiada.\par
 \pend
 %
 \begin{center}
-\textbf{[VI]}
+\textbf{VI}
 \end{center}
 \pstart
 ¶Y los siervos bien midridos\\
@@ -112,7 +117,7 @@ del temor de la çelada,\par
 \pend
 %
 \begin{center}
-\textbf{[VII]}
+\textbf{VII}
 \end{center}
 \pstart
 \noindent[f. 26r] ¶Por este mu\suppl{n}do mezq\emph{ui}no\\
@@ -122,7 +127,7 @@ no estés más en la posada.\par
 \pend
 %
 \begin{center}
-\textbf{[VIII]}
+\textbf{VIII}
 \end{center}
 \pstart
 ¶Sey continuo en la oraçió\emph{n}\\
@@ -132,7 +137,7 @@ en la verdat encarnada.\par
 \pend
 %
 \begin{center}
-\textbf{[IX]}
+\textbf{IX}
 \end{center}
 \pstart
 ¶Busca secretos lugares\\
@@ -142,7 +147,7 @@ de la culpa bie\emph{n} llorada.\par
 \pend
 %
 \begin{center}
-\textbf{[X]}
+\textbf{X}
 \end{center}
 \pstart
 ¶Lo que te sobra del día\\
@@ -152,7 +157,7 @@ de la gl\emph{or}ia deseada.\par
 \pend
 %
 \begin{center}
-\textbf{[XI]}
+\textbf{XI}
 \end{center}
 \pstart
 ¶Y vendrás a la vmildat\\
@@ -160,12 +165,10 @@ que es creer de ti v\emph{er}dat,\\
 de la santa caridat\\
 suele estar ap\suppl{o}sentada.\par
 \pend
-\relax
-\vfill
-\newpage
+\repage
 %
 \begin{center}
-\textbf{[XII]}
+\textbf{XII}
 \end{center}
 \pstart
 ¶Y gusta\emph{n}do los dulçores\\
@@ -175,7 +178,7 @@ ya no los ternas en nada.\par
 \pend
 %
 \begin{center}
-\textbf{[XIII]}
+\textbf{XIII}
 \end{center}
 \pstart
 ¶Do vernas a co\emph{n}te\emph{n}plar\\
@@ -185,7 +188,7 @@ esta tu carne cuytada.\par
 \pend
 %
 \begin{center}
-\textbf{[XIV]}
+\textbf{XIV}
 \end{center}
 \pstart
 ¶Si tovieres el q\emph{ue}rer\\
@@ -195,7 +198,7 @@ en esta tierra prestada.\par
 \pend
 %
 \begin{center}
-\textbf{[XV]}
+\textbf{XV}
 \end{center}
 \pstart
 ¶Lo q\emph{ue} Adán nos perdió,\\
@@ -206,7 +209,7 @@ vida bie\emph{n} ave\emph{n}turada.\par
 \pend
 %
 \begin{center}
-\textbf{[XVI]}\par
+\textbf{XVI}\par
 ¶\textbf{Cabo}
 \end{center}
 \pstart
@@ -224,7 +227,7 @@ Para los devotos cristianos que están en la batalla espiritual se aplican estos
 %
 \beginnumbering
 \begin{center}
-\textbf{[I]}
+\textbf{I}
 \end{center}
 \pstart
 \textsc{Pues tienes} libre poder\\
@@ -235,7 +238,7 @@ la perdurable morada,\par
 \pend
 %
 \begin{center}
-\textbf{[II]}
+\textbf{II}
 \end{center}
 \pstart
 Que después del hombre muerto\\
@@ -245,7 +248,7 @@ le será cuenta tomada.\par
 \pend
 %
 \begin{center}
-\textbf{[III]}
+\textbf{III}
 \end{center}
 \pstart
 Has de ir solo, peregrino,\\
@@ -256,7 +259,7 @@ que te hizo de no nada,\par
 \pend
 %
 \begin{center}
-\textbf{[IV]}
+\textbf{IV}
 \end{center}
 \pstart
 Sirviendo prudentemente,\\
@@ -266,7 +269,7 @@ el que es fin de la jornada.\par
 \pend
 %
 \begin{center}
-\textbf{[V]}
+\textbf{V}
 \end{center}
 \pstart
 Por sus obras has de andar,\\
@@ -277,10 +280,10 @@ palabra demasiada.\par
 \repage
 %
 \begin{center}
-\textbf{[VI]}
+\textbf{VI}
 \end{center}
 \pstart
-Y los siervos bien \emph{abiertos}\footnoteE{\emph{Y los siervos bien midridos} / \emph{traygan sienpre los sentidos} = el vocablo adjetivo «midridos» parece provenir del vocablo griego \emph{μυδρίασις}, que significa «dilatación de la pupila» (\href{https://logeion.uchicago.edu/\%CE\%BC\%CF\%85\%CE\%B4\%CF\%81\%CE\%AF\%CE\%B1\%CF\%83\%CE\%B9\%CF\%82}{\textbf{μυδρίασις}}); de ser así la etimología para el adjetivo utilizado, el sentido sería, entonces, que los siervos deberían traer «los sentidos bien abiertos» o «estar muy atentos».}\\
+Y los siervos bien \emph{abiertos}\footnoteE{\emph{Y los siervos bien midridos} / \emph{traygan sienpre los sentidos} = el vocablo adjetivo «midridos» parece provenir del vocablo griego \emph{μυδρίασις}, que significa «dilatación de la pupila» (\href{https://logeion.uchicago.edu/\%CE\%BC\%CF\%85\%CE\%B4\%CF\%81\%CE\%AF\%CE\%B1\%CF\%83\%CE\%B9\%CF\%82}{\underline{μυδρίασις}}); de ser así la etimología para el adjetivo utilizado, el sentido sería, entonces, que los siervos deberían traer «los sentidos bien abiertos» o «estar muy atentos».}\\
 traigan siempre los sentidos,\\
 recelen los recogidos\\
 del temor de la celada,\par
@@ -288,7 +291,7 @@ del temor de la celada,\par
 \pend
 %
 \begin{center}
-\textbf{[VII]}
+\textbf{VII}
 \end{center}
 \pstart
 Por este mundo mezquino\\
@@ -298,7 +301,7 @@ no estés más en la posada.\par
 \pend
 %
 \begin{center}
-\textbf{[VIII]}
+\textbf{VIII}
 \end{center}
 \pstart
 Sé continuo en la oración\\
@@ -308,7 +311,7 @@ en la verdad encarnada.\par
 \pend
 %
 \begin{center}
-\textbf{[IX]}
+\textbf{IX}
 \end{center}
 \pstart
 Busca secretos lugares\\
@@ -318,7 +321,7 @@ de la culpa bien llorada.\par
 \pend
 %
 \begin{center}
-\textbf{[X]}
+\textbf{X}
 \end{center}
 \pstart
 Lo que te sobra del día\\
@@ -328,7 +331,7 @@ de la gloria deseada.\par
 \pend
 %
 \begin{center}
-\textbf{[XI]}
+\textbf{XI}
 \end{center}
 \pstart
 Y vendrás a la humildad\\
@@ -338,7 +341,7 @@ suele estar aposentada.\par
 \pend
 %
 \begin{center}
-\textbf{[XII]}
+\textbf{XII}
 \end{center}
 \pstart
 Y gustando los dulzores\\
@@ -348,7 +351,7 @@ ya no los \emph{tendrás}\footnoteE{«ternas» en el \emph{cod.} Proviene de «t
 \pend
 %
 \begin{center}
-\textbf{[XIII]}
+\textbf{XIII}
 \end{center}
 \pstart
 Do \emph{vendrás}\footnoteE{«vernas» en el \emph{cod.} Es un arcaísmo castellano de «venir», que significa «vendrás» (\emph{seg. sg. fut.}). Atestigua este vocablo el manuscrito de la \emph{Fazienda de Ultramar} (Univ. de Salamanca), año 1220-1230.
@@ -359,7 +362,7 @@ esta tu carne cuitada.\par
 \pend
 %
 \begin{center}
-\textbf{[XIV]}
+\textbf{XIV}
 \end{center}
 \pstart
 Si tuvieras el querer\\
@@ -369,7 +372,7 @@ en esta tierra prestada.\par
 \pend
 %
 \begin{center}
-\textbf{[XV]}
+\textbf{XV}
 \end{center}
 \pstart
 Lo que Adán nos perdió,\\
@@ -379,7 +382,7 @@ vida bienaventurada.\par
 \pend
 %
 \begin{center}
-\textbf{[XVI]}\par
+\textbf{XVI}\par
 \textbf{Cabo}
 \end{center}
 \pstart
