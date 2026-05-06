@@ -2,7 +2,11 @@
 \ProvidesPackage{editio-critica}
 %Aparientia documentis.
 \RequirePackage{titleps}
-\newpagestyle{editio}{\setfoot[\thepage][][]{}{}{\thepage}}
+%\newpagestyle{editio}{\setfoot[\thepage][][]{}{}{\thepage}}
+%\newpagestyle{editio}{\sethead[\thepage][][]{}{}{\thepage}}
+%\newpagestyle{editio}{\sethead[][][\thepage]{\thepage}{}{}}
+\newcommand{\head}[1]{\def\myhead{#1}\thispagestyle{empty}} \def\myhead{}
+\newpagestyle{editio}{\sethead[][\ifx\myhead\empty\else\myhead\fi][\thepage]{\thepage}{\ifx\myhead\empty\else\myhead\fi}{}}
 \pagestyle{editio}
 \RequirePackage{microtype}
 \setlength{\parindent}{0.6cm}
@@ -12,22 +16,20 @@
 \fnpos{critical-familiar}
 \fnpos{{A}{familiar},{A}{critical},{E}{familiar}}
 \Xnotenumfont{\bfseries}
+\notenumfontX[E]{\bfseries}
 \AtBeginDocument{\Xmaxhnotes{0.66\textheight}\maxhnotesX{1\textheight}}
 \Xinplaceoflemmaseparator{0em}
 \Xnumberonlyfirstinline
 \Xnonbreakableafternumber
-%\Xparindent
+\Xparindent
 \parindentX[E]
-\Xsymlinenum{||}
-\Xbeforesymlinenum{-0.6em}
+\Xsymlinenum{\char"02016}
+\Xbeforesymlinenum{-6pt}
 \Xafterlemmaseparator{0.4em}
-\Xbeforelemmaseparator{-0.1em}
 \Xafternumber{0.4em}
 \linenummargin{outer}
 \prenotesX{11pt}
-\afterruleX{2pt}
 \Xprenotes{11pt}
-\Xafterrule{2pt}
 \renewcommand{\thefootnoteA}{}
 \Xarrangement{paragraph}
 \arrangementX[A]{paragraph}
@@ -38,7 +40,7 @@
 %Ad bibliographia.
 \RequirePackage[breaklinks=true,hidelinks]{hyperref}
 \RequirePackage{xurl}
-\RequirePackage[style=ascph,backend=biber,url=true]{biblatex}
+\RequirePackage[style=nphc,backend=biber,url=true]{biblatex}
 \addbibresource{bibliography.bib}
 \setlength{\bibhang}{0.6cm}
 \makeatletter
@@ -48,3 +50,6 @@
 \usepackage{enumitem}
 \setlist{nosep,noitemsep,parsep=0pt}
 \newcommand{\comillas}[1]{«#1»}
+%
+\newcommand{\repage}{\relax\vfil\newpage}
+\newcommand{\enpage}{\relax\vfil}
